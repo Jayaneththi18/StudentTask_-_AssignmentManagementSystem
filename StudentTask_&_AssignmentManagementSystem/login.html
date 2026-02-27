@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — StudyFlow</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+  <div class="auth-page">
+
+    <div class="auth-left">
+      <div class="logo-wrap">
+        <div class="logo-icon-big">🎓</div>
+        <h1>StudyFlow</h1>
+        <p>Your smart student task &amp; assignment management system</p>
+      </div>
+      <div class="auth-features">
+        <div class="auth-feature-item">
+          <div class="feat-icon">✅</div>
+          <div class="feat-text">
+            <strong>Track All Your Tasks</strong>
+            <span>Never miss a deadline again</span>
+          </div>
+        </div>
+        <div class="auth-feature-item">
+          <div class="feat-icon">📋</div>
+          <div class="feat-text">
+            <strong>Assignment Manager</strong>
+
+            <span>Organise by subject and priority</span>
+          </div>
+        </div>
+        <div class="auth-feature-item">
+          <div class="feat-icon">📊</div>
+          <div class="feat-text">
+            <strong>Progress Tracking</strong>
+            <span>Visual charts to see your progress</span>
+          </div>
+        </div>
+        <div class="auth-feature-item">
+          <div class="feat-icon">📢</div>
+          <div class="feat-text">
+            <strong>Admin Announcements</strong>
+            <span>Stay updated with important notices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-right">
+      <div class="auth-form-wrap">
+        <h2>Welcome Back! 👋</h2>
+        <p class="subtitle">Sign in to your StudyFlow account</p>
+
+        <form action="index.php" method="POST">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <div class="input-wrap">
+              <span class="input-icon">📧</span>
+              <input type="email" id="email" name="email" placeholder="you@student.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <span class="input-icon">🔒</span>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+          </div>
+
+          <div style="display:flex;justify-content:flex-end;margin-bottom:20px;">
+            <a href="#" style="font-size:13px;color:var(--primary);font-weight:600;">
+              Forgot password?
+            </a>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" style="font-size:15px;padding:14px;">
+            Sign In →
+          </button>
+        </form>
+
+        <p style="text-align:center;margin-top:24px;font-size:14px;color:var(--text-muted);">
+          Don't have an account?
+          <a href="register.html" style="color:var(--primary);font-weight:700;">Create one free</a>
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/auth.js"></script>
+
+</body>
+
+</html>

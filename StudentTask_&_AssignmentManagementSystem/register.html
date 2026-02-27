@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — StudyFlow</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+  <div class="auth-page">
+
+
+    <div class="auth-left">
+      <div class="logo-wrap">
+        <div class="logo-icon-big">🎓</div>
+        <h1>StudyFlow</h1>
+        <p>Join thousands of students managing their studies smarter</p>
+      </div>
+      <div class="auth-features">
+        <div class="auth-feature-item">
+          <div class="feat-icon">🚀</div>
+          <div class="feat-text">
+            <strong>Free to Use</strong>
+            <span>No credit card needed, ever</span>
+          </div>
+        </div>
+        <div class="auth-feature-item">
+          <div class="feat-icon">🔒</div>
+          <div class="feat-text">
+            <strong>Secure &amp; Private</strong>
+            <span>Your data stays safe</span>
+          </div>
+        </div>
+        <div class="auth-feature-item">
+          <div class="feat-icon">📱</div>
+          <div class="feat-text">
+            <strong>Works Everywhere</strong>
+            <span>Desktop, tablet and mobile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-right">
+      <div class="auth-form-wrap">
+        <h2>Create Account 🚀</h2>
+        <p class="subtitle">Sign up and start managing your tasks today</p>
+
+        <form action="register.php" method="POST" data-validate="register">
+
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <div class="input-wrap">
+              <span class="input-icon">👤</span>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="student_id">Student ID</label>
+              <div class="input-wrap">
+                <span class="input-icon">🪪</span>
+                <input type="text" id="student_id" name="student_id" placeholder="ST12345678">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="course">Course</label>
+              <div class="input-wrap">
+                <span class="input-icon">📚</span>
+                <input type="text" id="course" name="course" placeholder="e.g. BSc Software Eng">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <div class="input-wrap">
+              <span class="input-icon">📧</span>
+              <input type="email" id="email" name="email" placeholder="you@student.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">Password *</label>
+              <div class="input-wrap">
+                <span class="input-icon">🔒</span>
+                <input type="password" id="password" name="password" placeholder="Min 6 characters" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="confirm_password">Confirm Password *</label>
+              <div class="input-wrap">
+                <span class="input-icon">🔑</span>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Repeat password"
+                  required>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" style="font-size:15px;padding:14px;margin-top:6px;">
+            Create My Account →
+          </button>
+        </form>
+
+        <p style="text-align:center;margin-top:22px;font-size:14px;color:var(--text-muted);">
+          Already have an account?
+          <a href="login.html" style="color:var(--primary);font-weight:700;">Sign in here</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/auth.js"></script>
+
+</body>
+
+</html>
