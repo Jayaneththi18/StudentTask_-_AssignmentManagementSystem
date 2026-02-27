@@ -29,9 +29,7 @@ StudyFlow is a full-stack web application designed to help students organize the
 2. Import `database.sql` into your MySQL server
 3. Configure your DB credentials in `includes/config.php`
 4. Serve the project via a local PHP server (e.g., XAMPP, Laragon)
-5. Log in with the default admin account:
-   - **Email:** admin@studyflow.com
-   - **Password:** password
+
 
 ## 📁 Project Structure
 ├── admin/          # Admin dashboard (PHP)
